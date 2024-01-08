@@ -1,0 +1,96 @@
+body {
+    background: black url("black bg 2.jpg") no-repeat fixed center;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+h1, p {
+    color:whitesmoke;
+    text-align: center;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 18px;
+}
+
+form {
+    background-color: rgba(60, 60, 60, 0.7);
+    width: 50%; /* To take up only half of the container width */
+    margin: auto; /* To centralize the form */
+    padding: 23px 40px;
+    border-radius: 0.5em;
+}
+
+
+label {
+    color: white;
+    font-size: 14pt;
+    display: block;
+}
+
+span {
+    font-size: 11px;
+}
+
+input, select, textarea {
+    display: block; /* Arranging the input elements vertically on top each other */
+    width: 100%; /* Taking up 100% of the available width containing it */
+    margin: 0.3em 0 1em;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 12pt;
+    color: white;
+}
+
+input[type=radio], input[type=checkbox] {
+    width: auto; /* Automatically use the suitable width size */
+    display: inline; /* Arrange the radio button and label horizontally */
+}
+
+.white-text {
+    color: whitesmoke;
+    font-size: 12pt;
+}
+
+legend {
+    color: red;
+    font-size: 14pt;
+}
+
+fieldset {
+    border-color: red;
+    border-radius: 0.5em;
+    margin-bottom: 1em;
+}
+
+.input-bg, select {
+    background-color: black;
+}
+
+input[type=checkbox], input[type=radio] {
+    accent-color: slategrey; /* To change the bg-color to display when clicked*/
+    transform: scale(1.35);
+    margin-right: 5px;
+}
+
+textarea {
+    font-family: Arial;
+}
+
+input[type=submit] {
+    background-color: Red;
+    color: white;
+    width: 30%;
+    margin: auto;
+    border-radius: 1.3em;
+}
+
+small {
+    color: red;
+    margin-bottom: 2em;
+}

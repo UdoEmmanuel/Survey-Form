@@ -1,0 +1,130 @@
+<!--To specify the type of document this code should be viewed as-->
+<!DOCTYPE html>
+<html lang="en"> <!--"lang attribute to indicate the language the document is written in"-->
+    <head>
+        <link rel="stylesheet" href="styles_2.css" />
+        <meta charset="utf-8"> <!--"uft-8 is the suitable character encoding option for our webpage"-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TradingExperience</title> <!--the page name that display on the browser tab-->
+    </head>
+    <body>
+        <!--Adding my logo using the "<img> tag inside a <div> tag"-->
+        <div class="logo">
+            <img src="Trading Experience.png" alt="logo" width="350px" height="90px">
+        </div>>
+        <!--Indicating what the form is all about using a <header> tag-->
+        <header>
+            <h1 id="title">TradingExperience Survey Form</h1>
+            <p id="description"><i>Thank you for improving the university</i></p>
+        </header>
+        <!--Creating the form for collection of required data-->
+        <form id="survey_form" method="get" action="index_2.html">
+            <!--Building up the Bio input sections-->
+            <div class="bio">
+                <label for="name" id="name-label">Name <span>*surname first*</span></label>
+                <input type="text" id="name" name="name" placeholder="Fullname" class="input-bg" required />
+            </div>      
+            <div class="bio">
+                <label for="email" id="email-label">Email:</label>
+                <input type="email" id="email" name="emial" placeholder="Enter valid email" class="input-bg" required />
+            </div>
+            <div class="bio">
+                <label for="nationality">Nationality:</label>
+                <input type="text" id="nationality" name="nationality" placeholder="e.g Nigerian" class="input-bg" required />
+            </div>
+            <div class="bio">
+                <label for="number" id="number-label">Age</label>
+                <input type="number" id="number" name="age" placeholder="Enter your age" min="18" max="70" class="input-bg" required />
+            </div>
+            <div class="bio">
+                <label for="tel">Telephone: <span>(e.g +234-08129077771)</spam></label>
+                <input type="tel" id="tel" name="tel" placeholder="Enter your mobile number" pattern="[+][234]{3}-[0-9]{11}"  minlength="11" class="input-bg" required />
+            </div>
+            <!--Adding a dropdown menu to enable users choose from a list of options-->
+            <div>
+                <label for="dropdown">What option best describes your current role?</label>
+                <select id="dropdown" name="current-role" required>
+                    <option value="">Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="self-employed">Self Employed</option>
+                    <option value="unemployed">Unemployed</option>
+                    <option value="employed">Employed</option>
+                    <option value="freelancer">Freelancer</option>
+                    <option value="prefer not to say" disabled>Prefer Not to Say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <!--Radio button options - best for collecting one selection from a range of data-->
+            <div class="radio-button">
+                <fieldset>
+                    <legend>How did you hear about us?</legend>
+                    <label for="social media" class="white-text">
+                        <input type="radio" name="...hear-about-Us" id="social media" value="Social Media" checked /> Social Media
+                    </label>
+                    <label for="peer-referral" class="white-text">
+                        <input type="radio" name="...hear-about-Us" id="peer-referral" value="Peer Referral" /> Peer Referral
+                    </label>
+                    <label for="google/search-engine" class="white-text">
+                        <input type="radio" name="...hear-about-Us" id="google/search-engine" value="Google/Search Engine" /> Google/Search Engine
+                    </label>
+                    <label for="internet-ad" class="white-text">
+                        <input type="radio" name="...hear-about-Us" id="internet-ad" value="Internet Ad" /> Internet Ad
+                    </label>
+                    <label for="other" class="white-text">
+                        <input type="radio" name="...hear-about-Us" id="other" value="Other" /> Other
+                    </label>
+                </fieldset>
+            </div>
+            <!--Another dropdown menu for collection of user data-->
+            <div>
+                <label for="dropdown" id="experience-level">How long have you been trading?</label>
+                <select id="dropdown" name="experience-level" required>
+                    <option value="">Select current role</option>
+                    <option value="zero experience">Zero Experience</option>
+                    <option value="amateur">Amateur (less than 1 year)</option>
+                    <option value="intermediate">Intermediate (more than 2 years)</option>
+                    <option value="advanced">Advance (more than 3 years)</option>
+                    <option value="professional">Professional (5 years plus)</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <!--Adding a checkbutton section (best for multiple selection)-->
+            <div class="checkbutton">
+                <fieldset>
+                    <legend>What type of trader are you?</legend>
+                    <small>*check all that describes you*</small>
+                    <label for="scalper" class="white-text">
+                        <input type="checkbox" id="scalper" name="scalper" value="Scalper" /> Scalper
+                    </label>
+                    <label for="day trader" class="white-text">
+                        <input type="checkbox" id="day trader" name="day trader" value="Day Trader" /> Day Trader
+                    </label>
+                    <label for="swing trader" class="white-text">
+                        <input type="checkbox" id="swing trader" name="swing trader" value="Swing Trader" /> Swing Trader
+                    </label>
+                    <label for="position trader" class="white-text">
+                        <input type="checkbox" id="position trader" name="position trader" value="Position Trader" /> Position Trader
+                    </label>
+                    <label for="trend trader" class="white-text">
+                        <input type="checkbox" id="trend trader" name="trend trader" value="Trend Trader" /> Trend Trader
+                    </label>
+                    <label for="news trader" class="white-text">
+                        <input type="checkbox" id="news trader" name="news trader" value="News Trader" /> News Trader
+                    </label>
+                    <label for="ea trader" class="white-text">
+                        <input type="checkbox" id="ea trader" name="ea trader" value="EA Trader" /> EA Trader
+                    </label>
+                </fieldset>
+            </div>
+            <!--Creating a suggestion/comment box with the use of <textarea> tag-->
+            <div>
+                <label for="suggestions">Any comments or Suggestions?</label>
+                <textarea id="suggestions" name="suggestions" class="input-bg" placeholder="Hi TradingExperience, thanks for the endless values you deliver in your mentorship." rows="5" columns="40" ></textarea>
+            </div>
+            <!--Finally adding a submit button with the input tag with type="submit" for submitting collected user data-->
+            <div>
+                <input type="submit" id="submit" value="Submit" />
+            </div>
+        </form>
+    </body>
+</html>
